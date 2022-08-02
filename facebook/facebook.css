@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    background-color: rgb(240 242 245);
+}
+
+a {
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    float: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    padding: 50px;
+}
+
+.left h1 {
+    font-size: 3rem;
+    color: rgb(66 103 178);
+}
+
+.right {
+    margin: 50px auto;
+}
+
+form {
+    display: inline-block;
+    background-color: rgb(255 255 255);
+    height: 250px;
+    width: 396px;
+    box-shadow: white 5px 5px;
+    border-radius: 8px;
+    margin: 40px 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.text {
+    border-radius: 40px;
+    background-color: inherit;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+}
+
+.password {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+input[type="password"] {
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+}
+
+.submit {
+    width: 100%;
+    background-color: inherit;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(66 103 178);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+}
+
+.bot {
+    background-color: inherit;
+}
+
+.bot a {
+    margin-left: 90px;
+    text-align: center;
+    background-color: inherit;
+}
+
+.button {
+    position: relative;
+    background-color: green;
+    margin-left: 90px;
+    margin-top: 50px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+}

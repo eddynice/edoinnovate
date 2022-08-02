@@ -1,0 +1,22 @@
+body {
+    background-color: chocolate;
+    padding: 0;
+    margin: 0;
+}
+
+body h1 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    text-align: center;
+    font-size: 30;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}

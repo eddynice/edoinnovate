@@ -12,6 +12,7 @@ a {
     list-style: none;
     text-decoration: none;
     cursor: pointer;
+    color: #000 !important;
 }
 
 .container {
@@ -21,20 +22,21 @@ a {
 }
 
 .left {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin: 50px;
     padding: 50px;
 }
 
 .left h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: rgb(66 103 178);
 }
 
+.left p {
+    font-size: 2rem
+}
+
 .right {
-    margin: 120px auto 10px;
+    margin: 120px auto 12px;
     background-color: rgb(255 255 255);
     display: inline-block;
 }
@@ -122,10 +124,64 @@ input[type="submit"] {
     font-size: 14px;
     width: 50%;
     border: none;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 .achor {
     text-align: left;
-    margin-left: 55%;
+    margin-left: 63.5%;
+    font-size: 15;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .left {
+        margin: 20px;
+    }
+    .left h1 {
+        font-size: 80;
+    }
+    .left p {
+        font-size: 30;
+    }
+    .right {
+        width: 100%;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    form {
+        width: 70%;
+        margin: 8px auto;
+    }
+    .button {
+        width: 70%;
+    }
+    input[type="submit"] {
+        width: 90%;
+        margin-left: 10px;
+    }
+    input[type="password"] {
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    .bot a {
+        text-align: center;
+        /* font-size: 14px; */
+        font-weight: 500;
+        margin-left: 50px;
+        background-color: #fff;
+    }
+    .button {
+        margin-left: 35px;
+    }
+    .achor {
+        margin-left: 10.5%;
+        font-size: 15;
+    }
 }

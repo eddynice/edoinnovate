@@ -3,16 +3,21 @@
     background-color: rgb(240 242 245);
 }
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
 a {
     list-style: none;
-    text-align: center;
     text-decoration: none;
-    float: center;
+    cursor: pointer;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .left {
@@ -29,29 +34,22 @@ a {
 }
 
 .right {
-    margin: 50px auto;
+    margin: 120px auto 10px;
+    background-color: rgb(255 255 255);
+    display: inline-block;
 }
 
 form {
-    display: inline-block;
-    background-color: rgb(255 255 255);
-    height: 250px;
-    width: 396px;
     box-shadow: white 5px 5px;
     border-radius: 8px;
-    margin: 40px 0 0;
-    padding: 20px;
-    box-sizing: border-box;
+    margin: 8px 5px;
+    padding: 30px;
     border: none;
+    background-color: inherit
 }
 
 .text {
-    border-radius: 40px;
-    background-color: inherit;
     margin-bottom: 10px;
-    position: relative;
-    text-align: left;
-    margin: 20px auto;
 }
 
 input[type="text"] {
@@ -59,10 +57,11 @@ input[type="text"] {
     font-size: 17px;
     padding: 14px 16px;
     width: 330px;
+    background-color: #fff;
+    border: 1px solid rgb(221 223 226);
 }
 
 .password {
-    background-color: #fff;
     margin-bottom: 10px;
 }
 
@@ -71,6 +70,8 @@ input[type="password"] {
     font-size: 17px;
     padding: 14px 16px;
     width: 330px;
+    background-color: #fff;
+    border: 1px solid rgb(221 223 226);
 }
 
 .submit {
@@ -80,30 +81,51 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-    background-color: rgb(66 103 178);
+    background-color: rgb(24 119 242);
     border-radius: 6px;
     color: white;
     font-size: 17px;
     padding: 14px 16px;
     width: 330px;
+    border: 1px solid rgb(221 223 226);
 }
 
 .bot {
-    background-color: inherit;
+    background-color: #fff;
+    margin: 16px 0px 0px;
+}
+
+.border {
+    align-items: center;
+    border-bottom: 1px solid rgb(24, 90, 177);
+    margin: 20px 16px;
+    display: flex;
+    text-align: center;
 }
 
 .bot a {
-    margin-left: 90px;
     text-align: center;
-    background-color: inherit;
+    font-size: 14px;
+    color: rgb(24 119 242);
+    /* font-size: 14px; */
+    font-weight: 500;
+    margin-left: 100px;
+    background-color: #fff;
 }
 
 .button {
-    position: relative;
+    text-align: center;
     background-color: green;
-    margin-left: 90px;
-    margin-top: 50px;
-    height: 40px;
+    padding: 10px;
     border-radius: 5px;
     color: white;
+    font-size: 14px;
+    width: 50%;
+    border: none;
+    margin-left: 80px;
+}
+
+.achor {
+    text-align: left;
+    margin-left: 55%;
 }

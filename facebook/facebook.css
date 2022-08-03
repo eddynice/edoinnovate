@@ -42,12 +42,13 @@ a {
 }
 
 form {
-    box-shadow: white 5px 5px;
     border-radius: 8px;
-    margin: 8px 5px;
     padding: 30px;
+    margin: 8px 5px;
+    background-color: inherit;
+    box-sizing: border-box;
+    width: 396px;
     border: none;
-    background-color: inherit
 }
 
 .text {
@@ -58,7 +59,7 @@ input[type="text"] {
     border-radius: 7px;
     font-size: 17px;
     padding: 14px 16px;
-    width: 330px;
+    width: 340px;
     background-color: #fff;
     border: 1px solid rgb(221 223 226);
 }
@@ -71,7 +72,7 @@ input[type="password"] {
     border-radius: 7px;
     font-size: 17px;
     padding: 14px 16px;
-    width: 330px;
+    width: 340px;
     background-color: #fff;
     border: 1px solid rgb(221 223 226);
 }
@@ -88,7 +89,7 @@ input[type="submit"] {
     color: white;
     font-size: 17px;
     padding: 14px 16px;
-    width: 330px;
+    width: 340px;
     border: 1px solid rgb(221 223 226);
 }
 
@@ -129,7 +130,7 @@ input[type="submit"] {
 
 .achor {
     text-align: left;
-    margin-left: 63.5%;
+    margin-left: 60.5%;
     font-size: 15;
 }
 
@@ -154,15 +155,15 @@ input[type="submit"] {
         margin-left: 10px;
     }
     form {
-        width: 70%;
+        width: 100%;
         margin: 8px auto;
     }
     .button {
         width: 70%;
     }
     input[type="submit"] {
-        width: 90%;
-        margin-left: 10px;
+        width: 100%;
+        margin-left: 5px;
     }
     input[type="password"] {
         width: 100%;
@@ -174,11 +175,12 @@ input[type="submit"] {
         text-align: center;
         /* font-size: 14px; */
         font-weight: 500;
-        margin-left: 50px;
+        margin-left: 120px;
         background-color: #fff;
     }
     .button {
-        margin-left: 35px;
+        width: 50%;
+        margin-right: 200px;
     }
     .achor {
         margin-left: 10.5%;

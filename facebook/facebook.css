@@ -9,10 +9,9 @@ body {
 }
 
 a {
-    list-style: none;
     text-decoration: none;
     cursor: pointer;
-    color: #000 !important;
+    color: #000;
 }
 
 .container {
@@ -38,7 +37,7 @@ a {
 .right {
     margin: 120px auto 12px;
     background-color: rgb(255 255 255);
-    display: inline-block;
+    border-radius: 8px;
 }
 
 form {
@@ -49,6 +48,7 @@ form {
     box-sizing: border-box;
     width: 396px;
     border: none;
+    box-shadow: 0px 2px 10px 1px solid black;
 }
 
 .text {

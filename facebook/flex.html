@@ -8,7 +8,35 @@
     <style>
         .parent {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+        }
+        
+        img {
+            height: 40%;
+            width: 35%;
+        }
+        
+        img:hover {
+            height: 50%;
+            width: 40%;
+        }
+        
+        body {
+            background-color: bisque;
+        }
+        
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: blue;
+                color: white;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: rgb(255, 0, 0);
+                color: white;
+            }
         }
     </style>
 </head>
@@ -16,8 +44,13 @@
 <body>
     <div class="parent">
         <div class="child1">logo1</div>
-        <div class="child2">logo2</div>
+        <div class="child2">
+            <p>Logo two</p>
+
+            <img src="../images/rou.png" alt="alter image">
+        </div>
     </div>
+
 </body>
 
 </html>

@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav img{
+    width: 150px;
+    margin-top: 28px;
+    margin-left: 56px;  
+}
+
+main{
+    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.836)), url(NG-en-20220801-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    height: 130vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.container-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 33vw;
+    height: 100vh;
+    justify-content: center;
+    padding: 75px;
+    border-radius: 6px;
+}
+
+
+.form h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 0 0 20px 0;
+    margin: 0 0 13px 0;
+
+}
+
+.form input { 
+    margin: 0 0 12px 0;
+    width: 100%;
+    height: 50px;
+    padding: 27px 20px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    color:#ffffff;
+    background-color: #333333;
+    border: none;
+    outline: none;
+}
+
+.form input:blank{
+    border-style: none;
+    border-bottom: 3px #e87c03 solid;
+}
+
+
+.form button{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 0 0;
+    border: none;
+    cursor: pointer;
+
+}
+
+.form ::placeholder{
+    font-size: 16px;
+    color: #8c8c8c;
+
+}
+
+
+.text-under-signin{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 0 210px;
+
+}
+
+.text-under-signin input{
+    margin: 27px 0 0 -210px;
+
+
+}
+
+.text-under-signin label {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 17px 0 0px 1px;
+
+}
+
+.text-under-signin label ::after{
+    color: #000;
+
+}
+
+.text-under-signin a {
+    text-decoration: none;
+    color: #b3b3b3;
+    margin: 0 0 0 122px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.text-under-signin a:hover {
+    text-decoration: underline;
+}
+
+.reCAPTCHA {
+    color: #8c8c8c;
+    display: inline;
+    font-size: 13px;
+}
+
+.reCAPTCHA a {
+    text-decoration: none;
+    color: #0071eb;
+
+}
+
+.reCAPTCHA a:hover {
+    text-decoration: underline;
+}
+
+.below-text {
+    margin: 70px 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.below-text p {
+    color: #737373;
+
+}
+
+.below-text a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.below-text a:hover{
+    text-decoration: underline;
+}

@@ -3,6 +3,10 @@
                                 margin: 0;
                             }
                             
+                            a {
+                                color: rgb(34 34 34)
+                            }
+                            
                             ul {
                                 list-style: none;
                             }
@@ -22,7 +26,6 @@
                             
                             .backgroundContainer {
                                 background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(images/NG-en-20220801-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-                                z-index: 1;
                                 background-origin: content-box;
                                 background-repeat: no-repeat, repeat;
                                 background-size: cover;
@@ -46,7 +49,6 @@
                                 text-align: center;
                                 width: 100%;
                                 height: 50%;
-                                z-index: 1;
                                 color: #fff;
                                 border-bottom: 8px solid rgb(34 34 34);
                             }
@@ -130,10 +132,19 @@
                                 font-family: Helvetica, sans-serif;
                             }
                             
+                            .section2 .images1 {
+                                position: relative;
+                            }
+                            
+                            .section2 .images1 img {
+                                position: relative;
+                                z-index: 3;
+                            }
+                            
                             .section2 img {
                                 border: 0;
                                 height: auto;
-                                max-width: 90%;
+                                max-width: 100%;
                             }
                             
                             .section3 {
@@ -145,15 +156,56 @@
                                 background-color: #000;
                                 color: #fff;
                                 padding: 75px 45px;
+                                position: relative;
                                 border-bottom: 8px solid rgb(34 34 34);
                             }
                             
                             .section3 .images {
                                 margin: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: colunms;
+                                padding: 10px;
                             }
                             
-                            .section3 .images img {
-                                width: 480px;
+                            .section3 .images .img1 {
+                                max-width: 90%;
+                            }
+                            
+                            .section3 .images .img2 {
+                                height: 40px;
+                                width: 100%;
+                            }
+                            
+                            .section3 .images img {}
+                            
+                            .our-story-card-animation {
+                                height: 100%;
+                                left: 50%;
+                                max-height: 54%;
+                                max-width: 73%;
+                                position: absolute;
+                                top: 46%;
+                                transform: translate(-50%, -50%);
+                                width: 100%;
+                            }
+                            
+                            .our-story-card-animation1 {
+                                align-items: center;
+                                background: #000;
+                                border: 2px solid hsla(0, 0%, 100%, .25);
+                                border-radius: 0.75em;
+                                bottom: 20%;
+                                box-shadow: 0 0 2em 0 #000;
+                                display: flex;
+                                left: 29%;
+                                min-width: 10em;
+                                padding: 0.25em 0.65em;
+                                position: absolute;
+                                transform: translateX(-50%);
+                                width: 22%;
+                                height: 10%;
                             }
                             
                             .section3 .section3pages {
@@ -183,12 +235,14 @@
                             .section4 h1 {
                                 font-size: 50px;
                                 padding-left: 75px;
+                                font-family: Arial, Helvetica, sans-serif;
                             }
                             
                             .section4 h4 {
                                 font-size: 30px;
                                 padding-left: 75px;
                                 padding-right: 75px;
+                                font-family: Arial, Helvetica, sans-serif;
                             }
                             
                             .section5 {
@@ -203,7 +257,6 @@
                             
                             .section5 img {
                                 width: 420px;
-                                border-bottom: 8px solid rgb(34 34 34);
                             }
                             
                             .section5 h1 {
@@ -230,27 +283,39 @@
                             
                             .details {
                                 margin: 20px 20%;
+                                position: relative;
                             }
                             
                             .details summary {
                                 background: rgb(48 48 48);
                                 font-weight: 400;
                                 margin-bottom: 2px;
-                                padding: .8em;
                                 position: relative;
                                 width: 94.5%;
-                                font-size: 20px;
-                                padding: 20px;
+                                padding: 10px;
+                                font-size: 30px;
+                                color: #fff;
                             }
                             
-                            .details {}
+                            .faq-card .svg-icon-thin-x {
+                                fill: #fff;
+                                height: 1em;
+                                position: absolute;
+                                right: 1em;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: 1em;
+                            }
                             
                             .details p {
                                 background: rgb(48 48 48);
                                 color: #fff;
                                 padding: 20px;
-                                font-size: 1.3rem;
                                 margin: 2px;
+                                width: 95%;
+                                font-size: 28px;
+                                background-color: rgb( 32, 32, 32);
+                                font-family: Arial, sans-serif;
                             }
                             
                             .footer {
@@ -267,4 +332,114 @@
                                 font-weight: 400;
                                 line-height: 25px;
                                 font-family: Arial, Helvetica, sans-serif;
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .section1 h1 {
+                                    font-size: 1.5rem;
+                                }
+                                .section1 h3 {
+                                    font-size: 0.625rem;
+                                }
+                                .form {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .form input[type="text"] {
+                                    width: 70%;
+                                }
+                                .form input[type="submit"] {
+                                    width: 160px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin: 10px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .section2 {
+                                    flex-direction: column;
+                                }
+                                .our-story-card-video {
+                                    width: 100%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .section3 {
+                                    flex-direction: column;
+                                }
+                                .our-story-card-animation1 {
+                                    bottom: 56%;
+                                    left: 50%;
+                                }
+                                .section3 .section3pages h1 {
+                                    font-size: 1.625rem;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .section5 {
+                                    flex-direction: column;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .section4 h1 {
+                                    font-size: 1.625rem;
+                                    padding-left: 10px;
+                                }
+                                .section4 h4 {
+                                    font-size: 1.25rem;
+                                    padding: 1px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .section5 {
+                                    flex-direction: column;
+                                    font-size: 10px;
+                                    padding: 5px;
+                                }
+                                .section5 h4 {
+                                    font-size: 1.25rem;
+                                    padding: 5px;
+                                }
+                                .section5 h1 {
+                                    font-size: 2.3em;
+                                    padding: 5px;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                                .section5 h3 {
+                                    font-size: 1.8em;
+                                    padding: 2px;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                                .section5 img {
+                                    width: 100%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .section6 h1 {
+                                    font-size: 2.3em;
+                                }
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .details summary {
+                                    background: rgb(48 48 48);
+                                    font-weight: 400;
+                                    width: 100%;
+                                    /* padding: 15px; */
+                                    font-size: 30px;
+                                    /* padding-left: 75px; */
+                                    color: rgb(255 255 255);
+                                    padding-left: 75px;
+                                }
                             }

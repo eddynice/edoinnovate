@@ -1,0 +1,21 @@
+body {}
+
+#tittle {}
+
+h1 {
+    color: red
+}
+
+img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.main-intro {
+    margin: auto 0;
+}
+
+img {
+    width: 500px;
+    height: 100vh;
+}

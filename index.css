@@ -1,0 +1,114 @@
+h1 {
+    font-weight: 700 !important;
+    font-size: 2.88651rem !important;
+    margin-bottom: 1.8rem !important;
+    font-family: Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol;
+}
+
+ul {
+    list-style: none;
+    margin-left: 100px;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.osas {
+    margin: 120px auto
+}
+
+.osas h1 {
+    font-weight: 700 !important;
+    font-size: 2.88651rem !important;
+    margin-bottom: 1.8rem !important;
+    font-family: Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol
+}
+
+.osas p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem !important;
+}
+
+.image1 img {
+    width: 90%;
+    height: 90%;
+}
+
+.hiwithoutdiv {
+    text-align: center !important;
+    font-weight: 700 !important;
+    font-size: 2.88651rem !important;
+    margin-bottom: 1.8rem !important;
+    padding: 10px;
+}
+
+.class1 {
+    padding: 10px;
+}
+
+.class1 img {
+    height: 60px;
+}
+
+.buttonwidth {
+    width: 20%;
+    margin-left: 20px;
+}
+
+.para p {
+    color: rgb(84 72 55);
+    font-weight: 500 !important;
+    margin-bottom: 1.8rem !important;
+    margin-top: 0
+}
+
+.image2 {
+    max-width: 90%;
+    height: auto;
+}
+
+.para2 h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem !important;
+}
+
+.mt-5 {
+    border-bottom: 0.3px solid rgb(34 34 34);
+}
+
+.d-flexi {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.d-flexi img {
+    height: 34px;
+}
+
+@media only screen and (max-width: 576px) {
+    .osas h1 {
+        text-align: center;
+    }
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+    .d-flexi {
+        flex-direction: row;
+    }
+    .d-flexi img {
+        height: 34px;
+        width: 35px;
+    }
+}

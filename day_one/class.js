@@ -1,3 +1,4 @@
+//final code
 const seatingArrangement = [];
 const NUM_OF_ROWS = 4;
 const NUM_OF_COLUMNS = 4;

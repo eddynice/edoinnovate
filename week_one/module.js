@@ -10,4 +10,11 @@ export const checkNum = (num) => {
 const helloworld = () => {
     console.log("hellowold")
 }
-export default helloworld
+export default helloworld;
+
+let x = 7;
+if (x > 5 && x < 10) {
+    console.log(true)
+} else {
+    console.log(false)
+}

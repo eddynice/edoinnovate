@@ -9,6 +9,7 @@ for (let i = 0; i < NUM_OF_ROWS; i++) {
 
     // create a row
     const row = [];
+
     for (let j = 0; j < NUM_OF_COLUMNS; j++) {
         // increment the seating position, so the next seat can be one higher than the prevous one
         seatingPosition = seatingPosition + 1;
@@ -23,6 +24,7 @@ for (let i = 0; i < NUM_OF_ROWS; i++) {
     // add the row to the seating arrangement
     seatingArrangement.push(row);
 }
+console.log(seatingArrangement)
 
 const showSeatingArrangement = () => {
     // go through the array and log the seating arrangement to the console
@@ -33,7 +35,7 @@ const showSeatingArrangement = () => {
         let rowStr = "";
         row.forEach((seat) => {
             // Loop through each row to get the seats
-            str = str + seat[0] + "\t\t";
+            rowStr = rowStr + seat[0] + "\t\t";
         });
         // log each row
         console.log(rowStr);
@@ -95,7 +97,7 @@ const seatPerson = (userInput) => {
 
     // To get the rows we use Math.ceil which rounds up values
     const row = Math.ceil(userInput / NUM_OF_ROWS) - 1;
-    const col = userInput - 4 * NUM_OF_COLUMNS - 1;
+    const col = (userInput - 4 * NUM_OF_COLUMNS) - 1;
 
     // If the seat is full say the name of the person sat there
     if (isFull(seatingArrangement[row][col])) {
@@ -116,7 +118,7 @@ const seatPerson = (userInput) => {
 
 const isFull = (seat) => {
     // simply check if a seat is full by returning the second value in the array which is a boolean value that tells us if an array is full or not
-    return seat[1];
+    return (seat[1]);
 };
 
 const classIsFull = () => {

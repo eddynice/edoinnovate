@@ -17,3 +17,9 @@ user1.class = "300l";
 //console.log(user1.login_age());
 const use = user1.login_age()
 console.log(use)
+
+
+
+function name(params) {
+    return
+}

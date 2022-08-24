@@ -3,9 +3,9 @@ var container = document.getElementsByClassName("element")
 container[0].innerHTML = "come";
 //
 var uls = getElementsByTagName("li")
-getElementById('demo').innerHTML = uls[1].innerHTML;
+document.getElementById('demo').innerHTML = uls[1].innerHTML;
 document.querySelector("p").style.backgroundColor = " red";
-
+//var myList = document.querySelectorAll("p")
 const nodeList = document.querySelectorAll(".example");
 for (let i = 0; i < nodeList.length; i++) {
     nodeList[i].style.backgroundColor = "red";
@@ -28,7 +28,9 @@ function myFunction() {
 }
 
 function myFun() {
+    // u create a variable
     const pTag = document.createElement("h1")
+        //u use the textContent to get in some text
     pTag.textContent = "some Text"
     pTag.setAttribute("id", "paras")
     document.body.appendChild(pTag)
@@ -50,9 +52,9 @@ function myFunls() {
     document.body.removeChild(paragrap)
         // const pTag = document.createElement("h1")
         //pTag.textContent = "some Text"
-    pTag.setAttribute("id", "paras")
-    document.body.appendChild(container);
-    container.appendChild(pTag)
+        // pTag.setAttribute("id", "paras")
+        // document.body.appendChild(container);
+        // container.appendChild(pTag)
 
 
 }

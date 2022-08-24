@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>MY Home Class</h1>
+    <h6 id="intro">Computer science class</h6>
+    <p>This example illustrates the <b>getElementById</b> method.</p>
+    <p id="demo"></p>
+    <h3 class="exa">I am a paragrah</h3>
+    <h3 class="exa">I am a paragrah</h3>
+    <h4>Hello world</h4>
+    <h4>Hello Nord</h4>
+    <h4 id="demos"></h4>
+    <button onclick="myfunction()">myfunction()</button>
+</body>
+<script>
+    var contain = document.querySelectorAll("h4");
+    document.getElementById("demos").innerHTML = "The innerHTML of the second paragraph is:" + contain.innerHTML;
+
+
+    //document.querySelector(".exa").style.backgroundColor = "blue"
+    // const element = document.getElementById('intro');
+    // document.getElementById("demo").innerHTML = "comming to nigeria"
+    function myfunction() {
+        var myList = document.querySelectorAll("p")
+        for (var i = 0; i < myList.length; i++) {
+            myList[i].style.color = "red"
+        }
+    }
+</script>
+
+</html>

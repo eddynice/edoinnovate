@@ -3,13 +3,25 @@
 
 const submitButton = document.querySelector("#new-task-submit")
 submitButton.addEventListener("click", (e) => {
-    e.preventDefault()
-    console.log("buttton")
-    createTask()
+    e.preventDefault();
+    const inputBar = document.querySelector("#new-task-input")
+        // console.log("buttton")
+    createTask(inputBar.value);
+    saveData();
+    inputBar.value = ""
 
 })
-const createTask = () => {
-    const inputBar = document.querySelector("#new-task-input")
+
+window.addEventListener("DOMContentLoaded", () => {
+    const tasksa = localStorage.getItem("tasks")
+    const taskArr = JSON.parse(tasksa)
+    console.log(taskArr)
+    taskArr.forEach((task) => {
+        createTask(task)
+    })
+})
+const createTask = (taskdata) => {
+
     const div = document.querySelector("#tasks")
     const div1 = document.createElement("div")
     const div2 = document.createElement("div")
@@ -25,7 +37,7 @@ const createTask = () => {
     div3.setAttribute("class", "actions")
     input.setAttribute("type", "text");
     input.setAttribute("class", "text");
-    input.setAttribute("value", inputBar.value);
+    input.setAttribute("value", taskdata);
     input.setAttribute("readonly", "readonly");
     button.setAttribute("class", "edit");
     button.setAttribute("type", "button");
@@ -33,15 +45,18 @@ const createTask = () => {
     button2.setAttribute("type", "button");
     button2.addEventListener("click", () => {
         div.removeChild(div1)
+        saveData();
     })
     button.addEventListener("click", () => {
         if (button.textContent === "edit") {
             button.textContent = "save"
             input.removeAttribute("readonly")
+            saveData()
 
         } else {
             button.textContent = "edit";
             input.setAttribute("readonly", "readonly")
+            saveData()
         }
 
     })
@@ -56,6 +71,15 @@ const createTask = () => {
     div3.appendChild(button2)
         //document.body.appendChild(div);
     div.appendChild(div1);
-    inputBar.value = ""
 
+
+}
+const saveData = () => {
+    const tasks = document.querySelectorAll(".task");
+    const taskArr = []
+    tasks.forEach((task) => {
+        const inputs = task.querySelector("input");
+        taskArr.push(inputs.value);
+        localStorage.setItem("tasks", JSON.stringify(taskArr))
+    })
 }
